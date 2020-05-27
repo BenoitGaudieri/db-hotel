@@ -15,7 +15,7 @@ SELECT * FROM `ospiti` WHERE `name` LIKE "d%"
 
 
 QUERY 5 - Calcola il totale degli ordini accepted
-SELECT * FROM `pagamenti` WHERE `status` = "accepted"
+SELECT SUM(price) FROM `pagamenti` WHERE `status` = "accepted"
 
 
 QUERY 6 - Qual è il prezzo massimo pagato?
